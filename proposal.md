@@ -1,4 +1,4 @@
-# X-Team 108 Project Proposal
+# X-Team 108 Follow the Leader
 
 See https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code for tips on using *Markdown* tags to format __.md__ files
 
@@ -32,26 +32,34 @@ Be sure to submit corresponding image files, i.e. figure1.png (or figure1.jpg) f
 Briefly describe a problem that your team would like to solve.  
 Describe at a high level a program that could solve that problem.
 
+In our team, there was nobody volunteering to be a team leader, so we would need a systematic way to choose the most appropriate member as a leader. 
+ It would probably be a priority queue that weighted each member of a team on 1) attendance 2) contribution 3) leadership 4) team votes etc. and you could constantly update it to keep track of who's doing their part! I think this would be helpful not only for us, but for other teams in the class and across the world!
+
 ## Questions to answer for Exercise #2
 
 1. Name: Give your project proposal a name (and edit the top line of this file)
 
+Follow the Leader
 
 
 2. Output: Describe the output your program will produce.  Include and example format of the output produced.
-
-
+The name of the top member with some statistics on the progress/performance in the team.
 
 3. Input: Describe the data that is needed to solve your problem. Include an example format of the input data.
-
-
+Names, attendance, tasks(# of tasks that assigned, # of tasks that are done), progress, 
 
 4. User Interface: Describe a user interface for your program.  Use text menus or a simple graphic user interface.
-
+In the main page, there will be a matrix of all the tasks/meetings and the memebers' names where each memeber can check if they have attended the meetings or done the tasks. Data inputed on this page will be brought into the algorithm to decide who the next leader will be. 
 
 
 5. Types List: Break your solution idea down into units that you think can be implemented with a single class.
+ADT: Priority Queue to pick the member with the best performance/ nodes will be the memebrs with informations on their perfomances
 
+get_info(): Get the info from the stdin
+
+calculate_weight(): Calculate the weighted average of each member's performance(20% on attendance, 30% compleetion rate of the tasks...)
+
+update(): update the nodes on of priority queue based on new statistics
 
 
 Name each interface or class and briefly describe its function or purpose.
