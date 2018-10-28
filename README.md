@@ -1,4 +1,4 @@
-# teamExercise: https://github.com/<UserName>/<GitHubRepositoryName>
+# xteam-exercise-2: https://github.com/<UserName>/teamExercise
 
 1. Edit the title of this document
    * Replace <UserName> with the user name of the team member who created shared repository
@@ -7,7 +7,7 @@
 
 2. Answer these questions
    * What are the GitHub usernames and names of your team members?
-       * GitHub username 1:       name 1:
+       * GitHub username 1: wmdonovan-uwcs name 1: William (Max) Donovan
        * GitHub username 2:       name 2:
        * GitHub username 3:       name 3:
        * GitHub username 4:       name 4:
