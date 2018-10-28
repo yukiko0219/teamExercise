@@ -46,7 +46,16 @@ Follow the Leader
 The name of the top member with some statistics on the progress/performance in the team.
 
 3. Input: Describe the data that is needed to solve your problem. Include an example format of the input data.
-Names, attendance, tasks(# of tasks that assigned, # of tasks that are done), progress, 
+
+class Member node 
+fields
+1. member name (string)
+2. meeting attendance rate (double)
+3. tasks assigned (string[])
+4. tasks completed(string[])
+
+class method
+calculate_weight() :calculates the weighted average of member's performance based on meeting attendance rate and task completion rate
 
 4. User Interface: Describe a user interface for your program.  Use text menus or a simple graphic user interface.
 In the main page, there will be a matrix of all the tasks/meetings and the memebers' names where each memeber can check if they have attended the meetings or done the tasks. Data inputed on this page will be brought into the algorithm to decide who the next leader will be. 
