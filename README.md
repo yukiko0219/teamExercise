@@ -1,4 +1,4 @@
-# xteam-exercise-2: https://github.com/<UserName>/teamExercise
+# xteam-exercise-2: https://github.com/yukiko0219/teamExercise
 
 1. Edit the title of this document
    * Replace <UserName> with the user name of the team member who created shared repository
