@@ -32,8 +32,8 @@ Be sure to submit corresponding image files, i.e. figure1.png (or figure1.jpg) f
 Briefly describe a problem that your team would like to solve.  
 Describe at a high level a program that could solve that problem.
 
-In our team, there was nobody volunteering to be a team leader, so we would need a systematic way to choose the most appropriate member as a leader. 
- It would probably be a priority queue that weighted each member of a team on 1) attendance 2) contribution 3) leadership 4) team votes etc. and you could constantly update it to keep track of who's doing their part! I think this would be helpful not only for us, but for other teams in the class and across the world!
+When it comes to choosing a leader in a new project group, it is always true that the most extroverted member is chosen because of their confidence. However, it has been reported that introvert make great leaders as well in some settings. Unfortunately, they do not get chosen as their quietness and reserved characteristics does not get them attention needed to get picked. There are also some cases that all the members are introverts who do not think themselves as a leadership material(40 - 60% of population is introvert!). For instance, in our project team, there was nobody volunteering to be a team leader. To be able to pick the most suitable leader in a more objective manner, we would like to build a program to systematically choose the most appropriate member as a leader. 
+ In our program we evaluate each member's desirability as a leader based on 1) attendance 2) contribution 3) leadership 4) team votes etc. We would also keep track of who's doing their part, and reevaluate the leader as needed! 
 
 ## Questions to answer for Exercise #2
 
@@ -66,7 +66,7 @@ In the main page, there will be a menu where you can select "meetings, tasks, me
 
 
 5. Types List: Break your solution idea down into units that you think can be implemented with a single class.
-ADT: Priority Queue to pick the member with the best performance/ nodes will be the memebrs with informations on their perfomances
+ADT: Priority Queue to pick the member node with the best performance/ nodes will be the memebrs with informations on their perfomances
 
 get_info(): Get the info from the stdin
 
