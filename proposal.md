@@ -70,7 +70,7 @@ In the main page, there will be a menu where you can select "meetings, tasks, me
 this class keeps track of the progress of different members of the team and picks the member most suited as a leader  
 *fields*  
 1. PQ members
-Priority Queue to pick the member node with the best performance/ nodes will be the inner class Memebrs which stores informations on the members and their perfomances  
+Priority Queue to pick the member node with the best performance/ nodes will be the inner class Memebrs which stores informations on the members and their perfomances （if this priority queue is only for our xteam, we can set members as class fields: every change of the information can be updated to the class immediately）
 
 2. ArrayList<Meeting> meetings
  Arraylist to store the past meetings
@@ -93,7 +93,7 @@ Testing: prepare different set of dates and test if assing_meeting()
 
 5. assign_tasks(string member_name, string taskname) :assign a specific task to a member  
 
-6. pick_leader(): returns the Member object with the best performance  
+6. pick_leader(): returns the Member object with the best performance, according to the algorithm in calculate_weight() 
 
 
 **_inner class Member_**  
