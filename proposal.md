@@ -68,29 +68,25 @@ In the main page, there will be a menu where you can select "meetings, tasks, me
 5. Types List: Break your solution idea down into units that you think can be implemented with a single class.
 
 
-class Leader
-this class keeps track of the progress of different members of the team and picks the member most suited as a leader
-ADT: Priority Queue to pick the member node with the best performance/ nodes will be the memebrs with informations on their perfomances
+**class Leader**  
+this class keeps track of the progress of different members of the team and picks the member most suited as a leader  
+ADT: Priority Queue to pick the member node with the best performance/ nodes will be the memebrs with informations on their perfomances  
+set_up(): setup the UI for the program/restore the data from last session from the separate data.txt file  
 
-set_up(): setup the UI for the program/restore the data from last session from the separate data.txt file
+get_info(): Get the informations on the input data from the stdin store/update the info on a separate data.txt file   
 
-get_info(): Get the informations on the input data from the stdin store/update the info on a separate data.txt file
+update(): update the nodes on of priority queue based on new statistics  
 
-update(): update the nodes on of priority queue based on new statistics
+assign_meetings(date date) :assign meetings at a specific time and date  
 
-assign_meetings(date date) :assign meetings at a specific time and date
+assign_tasks(string member_name, string taskname) :assign a specific task to a member  
 
-assign_tasks(string member_name, string taskname) :assign a specific task to a member
-
-pick_leader(): returns the Member object with the best performance
-
-
-inner class method(Member)
-calculate_weight(): Calculate the weighted average of each member's performance(20% on attendance, 30% compleetion rate of the tasks...)
+pick_leader(): returns the Member object with the best performance  
 
 
-
-This would also include the class Member node listed above.
+**inner class Member**  
+This inner class stores the information of each member  
+calculate_weight(): Calculate the weighted average of each member's performance(20% on attendance, 30% compleetion rate of the tasks...)  
 
 Name each interface or class and briefly describe its function or purpose.
 
