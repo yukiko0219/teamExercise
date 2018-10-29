@@ -32,8 +32,9 @@ Be sure to submit corresponding image files, i.e. figure1.png (or figure1.jpg) f
 Briefly describe a problem that your team would like to solve.  
 Describe at a high level a program that could solve that problem.
 
-When it comes to choosing a leader in a new project group, it is always true that the most extroverted member is chosen because of their confidence. However, it has been reported that introvert make great leaders as well in some settings. Unfortunately, they do not get chosen as their quietness and reserved characteristics does not get them attention needed to get picked. There are also some cases that all the members are introverts who do not think themselves as a leadership material(40 - 60% of population is introvert!). For instance, in our project team, there was nobody volunteering to be a team leader. To be able to pick the most suitable leader in a more objective manner, we would like to build a program to systematically choose the most appropriate member as a leader. 
- In our program we evaluate each member's desirability as a leader based on 1) attendance 2) contribution 3) leadership 4) team votes etc. We would also keep track of who's doing their part, and reevaluate the leader as needed! 
+When it comes to choosing a leader in a new project group, it is always true that the most extroverted member is chosen because of their confidence. However, it has been reported that come introverts make great leaders as well in some settings. Unfortunately, they do not get chosen as their quietness and reserved characteristics do not get them attention needed to be picked. There are also some cases that all the members are introverts who do not think themselves as a leadership material(40 - 60% of population are introverts!). For instance, in our project team, there was nobody volunteering to be a team leader.  
+To be able to pick the most suitable leader in a more objective manner, we would like to build a program to systematically choose the most appropriate member as a leader. 
+In our program we evaluate each member's desirability as a leader based on 1) attendance 2) contribution 3) leadership 4) team votes etc. We would also keep track of who's doing their part, and reevaluate the leader as needed! 
 
 ## Questions to answer for Exercise #2
 
@@ -91,8 +92,10 @@ Testing: Prepare different set of data.txt and test if update() update the PQ ac
 Testing: prepare different set of dates and test if assing_meeting update ArrayList<Meeting> meetings accordingly
 
 * assign_tasks(string member_name, string taskname) :assign a specific task to a member  
+Testing: prepare different set of tasks with different memebers assigned. Test if assign_task(member_name, taskname) updates ArrayList<task> tasks accordingly.
 
-* pick_leader(): returns the Member object with the best performance, according to the algorithm in calculate_weight() 
+* pick_leader(): returns the Member object with the best performance, according to the algorithm in calculate_weight()   
+Testing: Create PQ of memebrs with different performance rate, test if the memebr with the best performance is chosen.
 
 
 **_inner class Member_**  
