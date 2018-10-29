@@ -79,43 +79,43 @@ Priority Queue to pick the member node with the best performance/ nodes will be 
  Arraylist to store the past tasks
 
 *methods*  
-set_up(): setup the UI for the program/restore the data from last session from the separate data.txt file  
+1. set_up(): setup the UI for the program/restore the data from last session from the separate data.txt file  
 Testing: Prepare data.txt with different set of data inside, and test if the set_up generates the UI accordingly.  
 
-get_info(): Get the informations on the input data(Meeting assignments/completions e.t.c) from the stdin and store/update the info on a separate data.txt file   
+2. get_info(): Get the informations on the input data(Meeting assignments/completions e.t.c) from the stdin and store/update the info on a separate data.txt file   
 Testing: Prepare various set of input data and test if the data.txt files are generated accordingly  
 
-update(): update the nodes on of priority queue based on new data from data.txt
+3. update(): update the nodes on of priority queue based on new data from data.txt
 Testing: Prepare different set of data.txt and test if update() update the PQ accordingly. Use dequeue() to check if the memebers are stored in the appropriate order.
 
-assign_meeting(date date) :assign meetings on a specific date  
+4. assign_meeting(date date) :assign meetings on a specific date  
 Testing: prepare different set of dates and test if assing_meeting()
 
-assign_tasks(string member_name, string taskname) :assign a specific task to a member  
+5. assign_tasks(string member_name, string taskname) :assign a specific task to a member  
 
-pick_leader(): returns the Member object with the best performance  
+6. pick_leader(): returns the Member object with the best performance  
 
 
 **_inner class Member_**  
 This inner class stores the information of each member  
 *fields*  
-String firstname, lastname  
+1. String firstname, lastname  
 
 *method*  
-private calculate_weight(): Calculate the weighted average of each member's performance(20% on attendance, 30% compleetion rate of the tasks...)   
+1. private calculate_weight(): Calculate the weighted average of each member's performance(20% on attendance, 30% compleetion rate of the tasks...)   
 
 **_inner class Meeting_**  
 This inner class stores the information on a meetings  
 *fields*  
-string meetingname  
-data date  
-Members[] (keeps track of who attended the meetings/empty by defalt upon the meeting assignment  
+1. string meetingname  
+2. data date  
+3. Members[] (keeps track of who attended the meetings/empty by defalt upon the meeting assignment  
 
 **_inner class Task_**  
 This inner class stores the information on a task  
-Member assgined (member object of the member assigned)  
-String task name  
-boolean complete (true if completed, false by defaul on the task assignment)  
+1. Member assgined (member object of the member who was assigned this task)  
+2. String task name  
+3. boolean complete (true if completed, false by defaul on the task assignment)  
 
 Name each interface or class and briefly describe its function or purpose.
 
