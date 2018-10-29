@@ -80,11 +80,11 @@ Testing: Prepare data.txt with different set of data inside, and test if the set
 *  get_info(): Get the informations on the input data(Meeting assignments/completions e.t.c) from the stdin and store/update the info on a separate data.txt file   
 Testing: Prepare various set of input data and test if the data.txt files are generated accordingly  
 
-* update(): update the nodes on of priority queue based on new data from data.txt
+* update(): update the nodes on of priority queue based on new data from data.txt  
 Testing: Prepare different set of data.txt and test if update() update the PQ accordingly. Use dequeue() to check if the memebers are stored in the appropriate order.
 
-* assign_meeting(date date) :assign meetings on a specific date  
-Testing: prepare different set of dates and test if assing_meeting()
+* assign_meeting(date date) :assign meetings on a specific date   
+Testing: prepare different set of dates and test if assing_meeting update ArrayList<Meeting> meetings accordingly
 
 * assign_tasks(string member_name, string taskname) :assign a specific task to a member  
 
