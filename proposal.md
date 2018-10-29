@@ -62,7 +62,6 @@ i.e.
 
 Use text menus or a simple graphic user interface.
 In the main page, there will be a menu where you can select "meetings, tasks, members, etc." that leads to a matrix of all the tasks/meetings and the memebers' names where each memeber can check if they have attended the meetings or done the tasks. Attendance and task completion would also be input into these tables. Data input into this page will be brought into the algorithm to decide who the next leader will be. 
-Please refer to the image below
 
 5. Types List: Break your solution idea down into units that you think can be implemented with a single class.
 
