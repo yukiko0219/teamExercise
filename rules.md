@@ -12,7 +12,7 @@ and missed deadlines.
 List down all the tasks and distribute the tasks evenly, reflecting their capabilities and preferences.
 
 ## How will we will track progress (and follow-up) on completion of tasks
-By pushing our works to the remote shared repository, and pull it to add any additions.
+By pushing our works to the remote shared repository as we progress with tasks, we can check the status of the project.
 Regular meeting to discuss face to face about what has been done and what needs to be done.
 
 
@@ -21,7 +21,7 @@ Regular meetings and group chat
 
 
 ## How we will back up each other to ensure that deadlines are not missed
-Let each other know in advance if we are facing difficulties meeting the deadlines and checking each other's progress.
+Let each other know in advance if we are facing difficulties meeting the deadlines and by checking each other's progress.
 
 
 ## Add any other rules that your team establishes to help each other work effectively together
