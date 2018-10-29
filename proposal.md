@@ -100,6 +100,9 @@ Testing: prepare different set of dates and test if assing_meeting()
 This inner class stores the information of each member  
 *fields*  
 1. String firstname, lastname  
+2. ArrayList<Task> assigned(list of assigned tasks )
+3. ArrayList<Task> completed(list of completed tasks)
+4. double meetingAttendanceRate 
 
 *method*  
 1. private calculate_weight(): Calculate the weighted average of each member's performance(20% on attendance, 30% compleetion rate of the tasks...)   
