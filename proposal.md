@@ -45,19 +45,18 @@ Follow the Leader
 2. Output: Describe the output your program will produce.  Include and example format of the output produced.
 The name of the top member with some statistics on the progress/performance in the team.
 i.e.\n
-Last Name, First Name  
-Attendance: x/y meetings  
-Notable Contributions: x, y, z  
+* Last Name, First Name  
+* Attendance: x/y meetings  
+* Notable Contributions: x, y, z  
 
 3. Input: Describe the data that is needed to solve your problem. Include an example format of the input data.
-1. member name (string)  
-2. meetings attendance (boolean)
-3. tasks completion (boolean)
 
-class method
-calculate_weight() :calculates the weighted average of member's performance based on meeting attendance rate and task completion rate
+* member name (string)  
+* meetings attendance (boolean)
+* tasks completion (boolean)
 
-4. User Interface: Describe a user interface for your program.  Use text menus or a simple graphic user interface.
+4. User Interface:  
+Describe a user interface for your program.  Use text menus or a simple graphic user interface.
 In the main page, there will be a menu where you can select "meetings, tasks, members, etc." that leads to a matrix of all the tasks/meetings and the memebers' names where each memeber can check if they have attended the meetings or done the tasks. Attendance and task completion would also be input into these tables. Data input into this page will be brought into the algorithm to decide who the next leader will be. 
 
 5. Types List: Break your solution idea down into units that you think can be implemented with a single class.
@@ -65,56 +64,56 @@ In the main page, there will be a menu where you can select "meetings, tasks, me
 **_class Leader_**  
 this class keeps track of the progress of different members of the team and picks the member most suited as a leader  
 *fields*  
-1. PQ members
+* PQ members
 Priority Queue to pick the member node with the best performance/ nodes will be the inner class Memebrs which stores informations on the members and their perfomances （if this priority queue is only for our xteam, we can set members as class fields: every change of the information can be updated to the class immediately）
 
-2. ArrayList<Meeting> meetings
+*  ArrayList<Meeting> meetings
  Arraylist to store the past meetings
  
- 3. ArrayList<Task> tasks
+ *  ArrayList<Task> tasks
  Arraylist to store the past tasks
 
 *methods*  
-1. set_up(): setup the UI for the program/restore the data from last session from the separate data.txt file  
+*  set_up(): setup the UI for the program/restore the data from last session from the separate data.txt file  
 Testing: Prepare data.txt with different set of data inside, and test if the set_up generates the UI accordingly.  
 
-2. get_info(): Get the informations on the input data(Meeting assignments/completions e.t.c) from the stdin and store/update the info on a separate data.txt file   
+*  get_info(): Get the informations on the input data(Meeting assignments/completions e.t.c) from the stdin and store/update the info on a separate data.txt file   
 Testing: Prepare various set of input data and test if the data.txt files are generated accordingly  
 
-3. update(): update the nodes on of priority queue based on new data from data.txt
+* update(): update the nodes on of priority queue based on new data from data.txt
 Testing: Prepare different set of data.txt and test if update() update the PQ accordingly. Use dequeue() to check if the memebers are stored in the appropriate order.
 
-4. assign_meeting(date date) :assign meetings on a specific date  
+* assign_meeting(date date) :assign meetings on a specific date  
 Testing: prepare different set of dates and test if assing_meeting()
 
-5. assign_tasks(string member_name, string taskname) :assign a specific task to a member  
+* assign_tasks(string member_name, string taskname) :assign a specific task to a member  
 
-6. pick_leader(): returns the Member object with the best performance, according to the algorithm in calculate_weight() 
+* pick_leader(): returns the Member object with the best performance, according to the algorithm in calculate_weight() 
 
 
 **_inner class Member_**  
 This inner class stores the information of each member  
 *fields*  
-1. String firstname, lastname  
-2. ArrayList<Task> assigned(list of assigned tasks )
-3. ArrayList<Task> completed(list of completed tasks)
-4. double meetingAttendanceRate 
+* String firstname, lastname  
+* ArrayList<Task> assigned(list of assigned tasks )
+* ArrayList<Task> completed(list of completed tasks)
+* double meetingAttendanceRate 
 
 *method*  
-1. private calculate_weight(): Calculate the weighted average of each member's performance(20% on attendance, 30% compleetion rate of the tasks...)   
+* private calculate_weight(): Calculate the weighted average of each member's performance(20% on attendance, 30% compleetion rate of the tasks...)   
 
 **_inner class Meeting_**  
 This inner class stores the information on a meetings  
 *fields*  
-1. string meetingname  
-2. data date  
-3. Members[] (keeps track of who attended the meetings/empty by defalt upon the meeting assignment  
+* string meetingname  
+* data date  
+* Members[] (keeps track of who attended the meetings/empty by defalt upon the meeting assignment  
 
 **_inner class Task_**  
 This inner class stores the information on a task  
-1. Member assgined (member object of the member who was assigned this task)  
-2. String task name  
-3. boolean complete (true if completed, false by defaul on the task assignment)  
+* Member assgined (member object of the member who was assigned this task)  
+* String task name  
+* boolean complete (true if completed, false by defaul on the task assignment)  
 
 Name each interface or class and briefly describe its function or purpose.
 
