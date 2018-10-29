@@ -45,6 +45,7 @@ Follow the Leader
 2. Output: Describe the output your program will produce.  Include and example format of the output produced.
 The name of the top member with some statistics on the progress/performance in the team.
 i.e.\n
+* We calculate the input of each member's attendance rate and the percentage of their completion in given assignment.
 * Last Name, First Name  
 * Attendance: x/y meetings  
 * Notable Contributions: x, y, z  
