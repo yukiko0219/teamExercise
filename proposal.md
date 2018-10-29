@@ -51,12 +51,12 @@ Notable Contributions: x, y, z
 
 3. Input: Describe the data that is needed to solve your problem. Include an example format of the input data.
 
-class Member 
+class Member  
 fields  
 1. member name (string)  
 2. meeting attendance rate (double)  
-3. tasks assigned (string[])  
-4. tasks completed(string[])  
+3. tasks assigned (task[])  
+4. tasks completed(task[])  
 
 class method
 calculate_weight() :calculates the weighted average of member's performance based on meeting attendance rate and task completion rate
@@ -98,24 +98,24 @@ pick_leader(): returns the Member object with the best performance
 
 **_inner class Member_**  
 This inner class stores the information of each member  
-*fields*
-String firstname, lastname
+*fields*  
+String firstname, lastname  
 
-*method*
-private calculate_weight(): Calculate the weighted average of each member's performance(20% on attendance, 30% compleetion rate of the tasks...) 
+*method*  
+private calculate_weight(): Calculate the weighted average of each member's performance(20% on attendance, 30% compleetion rate of the tasks...)   
 
-**_inner class Meeting_**
-This inner class stores the information on a meetings
-*fields*
-string meetingname
-data date
-Members[] (keeps track of who attended the meetings/empty by defalt upon the meeting assignment
+**_inner class Meeting_**  
+This inner class stores the information on a meetings  
+*fields*  
+string meetingname  
+data date  
+Members[] (keeps track of who attended the meetings/empty by defalt upon the meeting assignment  
 
-**_inner class Task_**
-This inner class stores the information on a task
-Member assgined (member object of the member assigned)
-String task name
-boolean complete (true if completed, false by defaul on the task assignment)
+**_inner class Task_**  
+This inner class stores the information on a task  
+Member assgined (member object of the member assigned)  
+String task name  
+boolean complete (true if completed, false by defaul on the task assignment)  
 
 Name each interface or class and briefly describe its function or purpose.
 
