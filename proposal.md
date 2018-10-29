@@ -44,19 +44,19 @@ Follow the Leader
 
 2. Output: Describe the output your program will produce.  Include and example format of the output produced.
 The name of the top member with some statistics on the progress/performance in the team.
-i.e.
-Last Name, First Name
-Attendance: x/y meetings
-Notable Contributions: x, y, z
+i.e.\n
+Last Name, First Name  
+Attendance: x/y meetings  
+Notable Contributions: x, y, z  
 
 3. Input: Describe the data that is needed to solve your problem. Include an example format of the input data.
 
-class Member node 
-fields
-1. member name (string)
-2. meeting attendance rate (double)
-3. tasks assigned (string[])
-4. tasks completed(string[])
+class Member 
+fields  
+1. member name (string)  
+2. meeting attendance rate (double)  
+3. tasks assigned (string[])  
+4. tasks completed(string[])  
 
 class method
 calculate_weight() :calculates the weighted average of member's performance based on meeting attendance rate and task completion rate
@@ -66,13 +66,29 @@ In the main page, there will be a menu where you can select "meetings, tasks, me
 
 
 5. Types List: Break your solution idea down into units that you think can be implemented with a single class.
+
+
+class Leader
+this class keeps track of the progress of different members of the team and picks the member most suited as a leader
 ADT: Priority Queue to pick the member node with the best performance/ nodes will be the memebrs with informations on their perfomances
 
-get_info(): Get the info from the stdin
+set_up(): setup the UI for the program/restore the data from last session from the separate data.txt file
 
-calculate_weight(): Calculate the weighted average of each member's performance(20% on attendance, 30% compleetion rate of the tasks...)
+get_info(): Get the informations on the input data from the stdin store/update the info on a separate data.txt file
 
 update(): update the nodes on of priority queue based on new statistics
+
+assign_meetings(date date) :assign meetings at a specific time and date
+
+assign_tasks(string member_name, string taskname) :assign a specific task to a member
+
+pick_leader(): returns the Member object with the best performance
+
+
+inner class method(Member)
+calculate_weight(): Calculate the weighted average of each member's performance(20% on attendance, 30% compleetion rate of the tasks...)
+
+
 
 This would also include the class Member node listed above.
 
