@@ -39,12 +39,12 @@ When it comes to choosing a leader in a new project group, it is always true tha
 
 1. Name: Give your project proposal a name (and edit the top line of this file)
 
-Follow the Leader
+  **Follow the Leader**
 
 
 2. Output: Describe the output your program will produce.  Include and example format of the output produced.
 The name of the top member with some statistics on the progress/performance in the team.
-i.e.\n
+i.e.  
 * We calculate the input of each member's attendance rate and the percentage of their completion in given assignment.
 * Last Name, First Name  
 * Attendance: x/y meetings  
