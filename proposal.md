@@ -50,13 +50,9 @@ Attendance: x/y meetings
 Notable Contributions: x, y, z  
 
 3. Input: Describe the data that is needed to solve your problem. Include an example format of the input data.
-
-class Member  
-fields  
 1. member name (string)  
-2. meeting attendance rate (double)  
-3. tasks assigned (task[])  
-4. tasks completed(task[])  
+2. meetings attendance (boolean)
+3. tasks completion (boolean)
 
 class method
 calculate_weight() :calculates the weighted average of member's performance based on meeting attendance rate and task completion rate
