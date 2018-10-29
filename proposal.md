@@ -44,6 +44,10 @@ Follow the Leader
 
 2. Output: Describe the output your program will produce.  Include and example format of the output produced.
 The name of the top member with some statistics on the progress/performance in the team.
+i.e.
+Last Name, First Name
+Attendance: x/y meetings
+Notable Contributions: x, y, z
 
 3. Input: Describe the data that is needed to solve your problem. Include an example format of the input data.
 
@@ -58,7 +62,7 @@ class method
 calculate_weight() :calculates the weighted average of member's performance based on meeting attendance rate and task completion rate
 
 4. User Interface: Describe a user interface for your program.  Use text menus or a simple graphic user interface.
-In the main page, there will be a matrix of all the tasks/meetings and the memebers' names where each memeber can check if they have attended the meetings or done the tasks. Data inputed on this page will be brought into the algorithm to decide who the next leader will be. 
+In the main page, there will be a menu where you can select "meetings, tasks, members, etc." that leads to a matrix of all the tasks/meetings and the memebers' names where each memeber can check if they have attended the meetings or done the tasks. Attendance and task completion would also be input into these tables. Data input into this page will be brought into the algorithm to decide who the next leader will be. 
 
 
 5. Types List: Break your solution idea down into units that you think can be implemented with a single class.
@@ -70,6 +74,7 @@ calculate_weight(): Calculate the weighted average of each member's performance(
 
 update(): update the nodes on of priority queue based on new statistics
 
+This would also include the class Member node listed above.
 
 Name each interface or class and briefly describe its function or purpose.
 
