@@ -32,9 +32,9 @@ Be sure to submit corresponding image files, i.e. figure1.png (or figure1.jpg) f
 Briefly describe a problem that your team would like to solve.  
 Describe at a high level a program that could solve that problem.
 
-When it comes to choosing a leader in a new project group, it is always true that the most extroverted member is chosen because of their confidence. However, it has been reported that come introverts make great leaders as well in some settings. Unfortunately, they do not get chosen as their quietness and reserved characteristics do not get them attention needed to be picked. There are also some cases that all the members are introverts who do not think themselves as a leadership material(40 - 60% of population are introverts!). For instance, in our project team, there was nobody volunteering to be a team leader.  
+When it comes to choosing a leader in a new project group, it is ususally the case true that the most extroverted member is chosen because of their confidence. However, it has been reported that introverts make great leaders as well in some settings. Unfortunately, they rarely get chosen as their quietness and reserved characteristics do not get them attention needed to be picked. There are also some cases that all the members are introverts who do not think themselves as a leadership material(40 - 60% of population are introverts!). For instance, in our project team, there was nobody volunteering to be a team leader.  
 To be able to pick the most suitable leader in a more objective manner, we would like to build a program to systematically choose the most appropriate member as a leader. 
-In our program we evaluate each member's desirability as a leader based on 1) attendance 2) contribution 3) leadership 4) team votes etc. We would also keep track of who's doing their part, and reevaluate the leader as needed! 
+In our program we evaluate each member's desirability as a leader based on 1) attendance 2) contribution. We would also keep track of who's doing their part, and re-evaluate each member as needed! 
 
 ## Questions to answer for Exercise #2
 
@@ -56,6 +56,8 @@ i.e.
 * member name (string)  
 * meetings attendance (boolean)
 * tasks completion (boolean)
+* names of tasks(string)
+* date of meetings (date)
 
 4. User Interface: Describe a user interface for your program.    
 
@@ -63,6 +65,7 @@ i.e.
 
 Use text menus or a simple graphic user interface.
 In the main page, there will be a menu where you can select "meetings, tasks, members, etc." that leads to a matrix of all the tasks/meetings and the memebers' names where each memeber can check if they have attended the meetings or done the tasks. Attendance and task completion would also be input into these tables. Data input into this page will be brought into the algorithm to decide who the next leader will be. 
+Please see the figure 1.
 
 5. Types List: Break your solution idea down into units that you think can be implemented with a single class.
 
@@ -73,10 +76,10 @@ this class keeps track of the progress of different members of the team and pick
 Priority Queue to pick the member node with the best performance/ nodes will be the inner class Memebrs which stores informations on the members and their perfomances （if this priority queue is only for our xteam, we can set members as class fields: every change of the information can be updated to the class immediately）
 
 *  ArrayList<Meeting> meetings
- Arraylist to store the past meetings
+ Arraylist to store the meetings
  
  *  ArrayList<Task> tasks
- Arraylist to store the past tasks
+ Arraylist to store the tasks
 
 *methods*  
 *  set_up(): setup the UI for the program/restore the data from last session from the separate data.txt file  
